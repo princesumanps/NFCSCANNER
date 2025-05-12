@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paper.Subscription.AdvancePlan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADVANCE PLAN INCLUDE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#3DC525"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price - $1100"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+    <TextView
+        android:gravity="center"
+        android:textColor="#7A7A7A"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price - $1100"
+        android:freezesText="true"
+        android:layout_marginBottom="@dimen/_30sdp"/>
+
+</FrameLayout>

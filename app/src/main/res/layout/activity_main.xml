@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F8EFEA">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_225sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/_10sdp">
+                <ImageView
+                    android:id="@+id/photo"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carhub"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="#E22020"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/customername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="PRINCE SUMAN"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/customerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:letterSpacing="0.1"
+                android:text="CUSTOMER ID - 87468MT782"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/customeridproofno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:letterSpacing="0.01"
+                android:text="ID Proof - ADDHAR CARD - 87468MT782"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:letterSpacing="0.01"
+                android:text="MOBILE NO. 9693865900"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:letterSpacing="0.01"
+                android:text="EMAIL address - tetraoctahaderal@gmail.com"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:letterSpacing="0.01"
+                android:text="Zip Code - "
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:letterSpacing="0.01"
+                android:text="Address - Barmasiya powerhouse colony near P&amp;T chowk"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:letterSpacing="0.01"
+                android:text="Signature - "
+                android:textSize="@dimen/_9ssp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/signature"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_25sdp"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/planes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:letterSpacing="0.01"
+                android:text="GOLD PLANE - ACTIVATED"
+                android:textColor="#2ABC2C"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/planeexpiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:letterSpacing="0.01"
+                android:text="PLANE EXPIRE ON - 30/12/2024"
+                android:textColor="#2ABC2C"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/services"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/upgradeburronshape"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="Services" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/approved"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/buttonbackground"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="APPROVED"
+            android:textSize="@dimen/_8ssp" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/history"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/buttonbackground"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="HISTORY"
+            android:textSize="@dimen/_8ssp" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/pending"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/buttonbackground"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="PENDING"
+            android:textSize="@dimen/_8ssp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@drawable/recyclershapbackground"
+        android:id="@+id/frameLayout"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerforservices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+<!--    <FrameLayout-->
+<!--        android:layout_marginStart="@dimen/_10sdp"-->
+<!--        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--        android:background="@drawable/servicerecyclerholdershape"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_50sdp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.5">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:layout_weight="0"-->
+<!--                android:layout_width="@dimen/_50sdp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/logonewagustus"/>-->
+<!--            <LinearLayout-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="SERVICE REMAIN 5"-->
+<!--                    android:textSize="@dimen/_5ssp"-->
+<!--                    android:letterSpacing="0.2"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_marginStart="@dimen/_20sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="SERVICE TYPE"-->
+<!--                    android:textSize="@dimen/_5ssp"-->
+<!--                    android:letterSpacing="0.2"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_marginStart="@dimen/_20sdp"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="@dimen/_5ssp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:letterSpacing="0.2"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="expire on 25/12/2024"-->
+<!--                    android:layout_marginStart="@dimen/_20sdp"/>-->
+<!--            </LinearLayout>-->
+<!--            <FrameLayout-->
+<!--                android:background="@drawable/shape"-->
+<!--                android:layout_width="@dimen/_80sdp"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                android:layout_height="@dimen/_20sdp"-->
+<!--                android:layout_gravity="center">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="@string/approve"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="@dimen/_6ssp"-->
+<!--                        android:letterSpacing="0.1"-->
+<!--                        android:layout_marginStart="@dimen/_5sdp"-->
+<!--                        android:layout_marginEnd="@dimen/_20sdp"/>-->
+<!--                    <View-->
+<!--                        android:layout_width="@dimen/_1sdp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#DC5C17"/>-->
+<!--                    <View-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:background="@drawable/downarrow"/>-->
+<!--                </LinearLayout>-->
+<!--            </FrameLayout>-->
+<!--        </LinearLayout>-->
+<!--    </FrameLayout>-->
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:background="@drawable/recyclershapbackground"-->
+<!--        android:id="@+id/recycler"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="PENDING"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/textView"
+            android:background="@color/black"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="PENDING"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--     planes code-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/platinumplan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="BUy Platinum Plan"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/servicecarengine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Car Engine Service"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/servicecar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Car Service"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

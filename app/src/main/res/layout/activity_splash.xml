@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFB200"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/carhublogo" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView1"
+            android:layout_width="@dimen/_50ssp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loader" />
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:id="@+id/waitcard"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Wait...\n Tap Your Card with Scan Device"
+                android:textAlignment="center" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="@dimen/_20ssp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_40sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loader" />
+        </androidx.cardview.widget.CardView>
+
+<!--        <TextView-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/write"-->
+<!--            android:layout_width="@dimen/_70sdp"-->
+<!--            android:layout_height="@dimen/_18sdp"-->
+<!--            android:layout_below="@+id/waitcard"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_marginStart="@dimen/_10sdp"-->
+<!--            android:background="@drawable/buttonbackground"-->
+<!--            android:gravity="center"-->
+<!--            android:letterSpacing="0.1"-->
+<!--            android:text="Write"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_8ssp" />-->
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
