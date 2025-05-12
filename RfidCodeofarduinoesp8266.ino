@@ -8,18 +8,18 @@
 
 
 /* 1. Define the WiFi credentials */
-#define WIFI_SSID "www.cyberoctopus.net"
-#define WIFI_PASSWORD "5656565656"
+#define WIFI_SSID "ADD_YOUR_WIFI_NAME"
+#define WIFI_PASSWORD "ADD_YOUR_WIFI_PASSWORD"
 
 /* 2. Define the API Key */
-#define API_KEY "AIzaSyBHOgPMdjeFggIB_zsn-yEXVkT2GcN5EIw"
+#define API_KEY "ADD_YOUR_API_KEY_OF_FIREBASE"
 
 /* 3. Define the RTDB URL */
-#define DATABASE_URL "https://carhub-33f33-default-rtdb.firebaseio.com/" 
+#define DATABASE_URL "ADD_YOUR_FIREBASE_DATABASE_URL" 
 
 /* 4. Define the user Email and password that alreadey registerd or added in your project */
-#define USER_EMAIL "tetraoctahaderal@gmail.com"
-#define USER_PASSWORD "12345678"
+#define USER_EMAIL "ADD_YOUR_EMAIL"
+#define USER_PASSWORD "ADD_PASSWORD"
 
 // Define Firebase Data object
 FirebaseData fbdo;
